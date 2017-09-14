@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Ow8-dQ-2SH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ac-OG-bmH">
+                    <rect key="frame" x="10" y="320.5" width="355" height="27.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V 1.1.1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUk-hD-AlD">
+                    <rect key="frame" x="10" y="348" width="355" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="lQO-9V-qOg">
+                    <rect key="frame" x="137" y="210.5" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="VR8-rS-FtZ"/>
+                        <constraint firstAttribute="height" constant="100" id="a8k-V2-YH6"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9ac-OG-bmH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="925-k6-Db1"/>
+                <constraint firstItem="lQO-9V-qOg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AJ2-A4-hwO"/>
+                <constraint firstAttribute="trailing" secondItem="9ac-OG-bmH" secondAttribute="trailing" constant="10" id="Afp-t1-MdH"/>
+                <constraint firstItem="FUk-hD-AlD" firstAttribute="top" secondItem="9ac-OG-bmH" secondAttribute="bottom" id="MZH-ZP-t6U"/>
+                <constraint firstItem="Ow8-dQ-2SH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PlQ-8q-nv6"/>
+                <constraint firstItem="9ac-OG-bmH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TKR-9h-tnU"/>
+                <constraint firstAttribute="trailing" secondItem="Ow8-dQ-2SH" secondAttribute="trailing" id="aNQ-s0-sif"/>
+                <constraint firstItem="Ow8-dQ-2SH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aeY-Pg-FOJ"/>
+                <constraint firstAttribute="trailing" secondItem="FUk-hD-AlD" secondAttribute="trailing" constant="10" id="ms1-U6-aXB"/>
+                <constraint firstAttribute="bottom" secondItem="Ow8-dQ-2SH" secondAttribute="bottom" id="pcJ-9v-waV"/>
+                <constraint firstItem="FUk-hD-AlD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="tBb-qX-Yss"/>
+                <constraint firstItem="9ac-OG-bmH" firstAttribute="top" secondItem="lQO-9V-qOg" secondAttribute="bottom" constant="10" id="wyN-HG-dXV"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="apple" width="4096" height="4096"/>
+        <image name="launchScreen" width="1080" height="1920"/>
+    </resources>
+</document>
