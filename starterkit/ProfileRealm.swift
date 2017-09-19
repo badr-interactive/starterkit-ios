@@ -53,7 +53,7 @@ class ProfileRealm{
             profile.access_token = access_token
         }
         
-        if let photo = profileDict.value(forKey: "photo") as? String {
+        if let photo = profileDict.value(forKey: "picture") as? String {
             profile.photo = photo
         }
         

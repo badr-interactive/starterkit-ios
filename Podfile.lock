@@ -21,6 +21,7 @@ PODS:
     - nanopb (~> 0.3)
   - FirebaseInstanceID (2.0.0):
     - FirebaseCore (~> 4.0)
+  - Floaty (3.0.0)
   - GoogleSignIn (4.0.2):
     - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
     - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
@@ -62,6 +63,7 @@ DEPENDENCIES:
   - AlamofireImage (~> 3.1)
   - Firebase/Auth
   - Firebase/Core
+  - Floaty (~> 3.0.0)
   - GoogleSignIn
   - GradientCircularProgress (from `https://github.com/keygx/GradientCircularProgress`)
   - RealmSwift
@@ -85,6 +87,7 @@ SPEC CHECKSUMS:
   FirebaseAuth: ebb6abcbabae00fc47446d690c19ce68d8484fde
   FirebaseCore: cfc042628ef9f20debe09c0eb683135fcd404cb4
   FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
+  Floaty: d1be5d323094f0de422bb615452d00ba26ac74dd
   GoogleSignIn: d7ad83f13480e1f30453471d00d19b5293ac46af
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GradientCircularProgress: 153d9657d994349d0bb18afe35115747ed8217cb
@@ -96,6 +99,6 @@ SPEC CHECKSUMS:
   SlideMenuControllerSwift: 9a163b16d54afab734add42858cba7ef7c307755
   Toaster: f13031c636ef065281bc11857be9a16c7659e04f
 
-PODFILE CHECKSUM: 263ee69aa02b41e67da29bd602eef2bf9229be9a
+PODFILE CHECKSUM: 9c9270498ead20278a2d7aa274d96c067f5b94eb
 
 COCOAPODS: 1.2.1

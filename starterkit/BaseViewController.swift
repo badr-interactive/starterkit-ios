@@ -19,9 +19,15 @@ class BaseViewController: UIViewController, URLSessionDelegate, URLSessionTaskDe
     var serverTrustPolicy: ServerTrustPolicy!
     var serverTrustPolicies: [String: ServerTrustPolicy]!
     var afManager: SessionManager!
+    
+    override var prefersStatusBarHidden: Bool{
+//        if Preference.init().getBoolPref(Preference.loginState)!{ return true }
+        return true
+    }
 }
 
 extension BaseViewController{
+    
     func initSideMenu(_ leftMenu: UIBarButtonItem, _ rightMenu: UIBarButtonItem) {
 //        self.revealViewController().rightViewRevealWidth = width
         leftMenu.target = self.revealViewController()
@@ -131,22 +137,6 @@ extension BaseViewController{
             self.showToast(NSLocalizedString("no_internet", comment: ""))
         }
     }
-//        showProgress()
-//        self.urlSession?.dataTask(with: NSURL(string:Constants.API_URL+method.rawValue)! as URL, completionHandler: { ( data,  response,  error) -> Void in
-//            DispatchQueue.main.async(execute: { () -> Void in
-//                self.closeProgressDialog()
-//            })
-//            
-//            guard let data = data, error == nil else {
-//                DispatchQueue.main.async(execute: { () -> Void in
-//                    print(error?.localizedDescription ?? "")
-//                })
-//                return
-//            }
-//            
-//            DispatchQueue.main.async(execute: { () -> Void in
-//                print(String(data: data, encoding: String.Encoding.utf8) ?? "")
-//            })
-//        }).resume()
-//    }
+    
+    
 }

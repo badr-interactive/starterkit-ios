@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        Preference.init().setBoolPref(Preference.loginState, false)
         return true
     }
     
@@ -64,6 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let controller = navController.viewControllers[0] as! ChangePasswordController
             controller.code = (url.queryParameters! as NSDictionary).value(forKey: "token") as! String
             controller.fromEmail = true
+            Preference.init().setBoolPref(Preference.loginState, true)
             self.window?.rootViewController = navController
             self.window?.makeKeyAndVisible()
         }

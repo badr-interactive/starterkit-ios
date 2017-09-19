@@ -10,6 +10,8 @@ import Foundation
 
 class Preference: NSObject{
     static let defaultPreference: Preference = Preference()
+    static let ifUniversalLinkEnable = "universal_link"
+    static let loginState = "logged_in"
     
     let preference: UserDefaults
     
@@ -24,10 +26,27 @@ class Preference: NSObject{
         super.init()
     }
     
-    func isLoggedIn() -> Bool? {
-        return preference.object(forKey: "logged_in") as! Bool?
+    func getBoolPref(_ key: String) -> Bool? {
+        if let value = preference.object(forKey: key) as? Bool{ return value }
+        return false
     }
-    func setLoginState(value: Bool) {
-        preference.set(value, forKey: "logged_in")
+    func setBoolPref(_ key: String, _ value: Bool) {
+        preference.set(value, forKey: key)
+    }
+    
+    func getIntPref(_ key: String) -> Int? {
+        if let value = preference.object(forKey: key) as? Int{ return value }
+        return 0
+    }
+    func setIntPref(_ key: String, _ value: Int) {
+        preference.set(value, forKey: key)
+    }
+    
+    func getStringPref(_ key: String) -> String? {
+        if let value = preference.object(forKey: key) as? String{ return value }
+        return ""
+    }
+    func setStringPref(_ key: String, _ value: String) {
+        preference.set(value, forKey: key)
     }
 }

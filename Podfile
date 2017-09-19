@@ -7,6 +7,7 @@ target 'starterkit' do
 
   # Pods for starterkit
   pod 'SlideMenuControllerSwift'
+  pod 'Floaty', '~> 3.0.0'
   
   pod 'Toaster', '~> 2.0'
   pod 'RealmSwift'

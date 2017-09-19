@@ -13,6 +13,10 @@ class MenuController: UITableViewController {
     var headerView: ImageHeaderView!
     @IBOutlet weak var loginLabel: UILabel!
     
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         headerView = ImageHeaderView.loadNib()
@@ -27,11 +31,11 @@ class MenuController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if Preference.init().isLoggedIn()==nil{
-            Preference.init().setLoginState(value: false)
+        if Preference.init().getBoolPref(Preference.loginState)==nil{
+            Preference.init().setBoolPref(Preference.loginState, false)
             self.tableView.tableHeaderView = nil
         }else{
-            if Preference.init().isLoggedIn()!{
+            if Preference.init().getBoolPref(Preference.loginState)!{
                 self.tableView.tableHeaderView = headerView
                 let profile = ProfileRealm.getData()
                 headerView.profileName.text = profile.name
@@ -58,10 +62,10 @@ class MenuController: UITableViewController {
         case 1:
             switch indexPath.row {
             case 0:
-                if Preference.init().isLoggedIn()! {
+                if Preference.init().getBoolPref(Preference.loginState)! {
                     self.tableView.tableHeaderView = nil
                     loginLabel.text = "Login"
-                    Preference.init().setLoginState(value: false)
+                    Preference.init().setBoolPref(Preference.loginState, false)
                     Utils.clearData()
                     self.performSegue(withIdentifier: "openHome", sender: nil)
                 }else{

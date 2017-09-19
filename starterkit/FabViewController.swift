@@ -1,5 +1,5 @@
 //
-//  SwiftViewController.swift
+//  JavaViewController.swift
 //  Example
 //
 //  Created by Ade Septiadi on 5/5/17.
@@ -7,23 +7,27 @@
 //
 
 import UIKit
+import Floaty
 
-class MapViewController: BaseViewController {
+class FabViewController: BaseViewController {
     @IBOutlet weak var leftMenuButton: UIBarButtonItem!
     @IBOutlet weak var rightMenuButton: UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Map"
+        self.title = "News"
         // Do any additional setup after loading the view.
         self.initSideMenu(leftMenuButton, rightMenuButton)
+        let floaty = Floaty()
+        floaty.addItem("Hello", icon: UIImage(named:"ic_perm_identity"))
+        self.view.addSubview(floaty)
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 //        self.setNavigationBarItem()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

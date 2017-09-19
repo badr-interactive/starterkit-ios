@@ -321,10 +321,10 @@
             </objects>
             <point key="canvasLocation" x="2816.8000000000002" y="144.3778110944528"/>
         </scene>
-        <!--Title-->
+        <!--Change Password-->
         <scene sceneID="taF-hm-Moe">
             <objects>
-                <viewController id="aUY-BL-XeJ" customClass="ChangePasswordController" customModule="starterkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Change Password" id="aUY-BL-XeJ" customClass="ChangePasswordController" customModule="starterkit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fln-p1-1Oi"/>
                         <viewControllerLayoutGuide type="bottom" id="CvY-B3-EXv"/>
@@ -354,7 +354,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert your Code in your email below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k24-iW-Esc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert the Code from your email below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k24-iW-Esc">
                                         <rect key="frame" x="24" y="16" width="327" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <color key="textColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -376,7 +376,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="submit:" destination="cf9-BA-u6M" eventType="touchUpInside" id="pfY-DX-FbZ"/>
+                                            <action selector="submit:" destination="aUY-BL-XeJ" eventType="touchUpInside" id="yMY-Km-e5R"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGQ-mw-N99">
@@ -428,7 +428,7 @@
                             <constraint firstItem="MUW-K8-FsC" firstAttribute="top" secondItem="fln-p1-1Oi" secondAttribute="bottom" id="j4x-xR-qUP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="h8H-UY-34h">
+                    <navigationItem key="navigationItem" title="Change Password" id="h8H-UY-34h">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="lze-b1-J4b">
                             <connections>
                                 <action selector="onBack:" destination="aUY-BL-XeJ" id="WcG-oU-yHZ"/>
@@ -450,7 +450,7 @@
             <objects>
                 <navigationController storyboardIdentifier="LoginNavBar" automaticallyAdjustsScrollViewInsets="NO" id="FbO-Ni-jlt" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="PrT-lS-Uws">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PrT-lS-Uws">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -468,7 +468,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mAN-2G-MpF" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fWc-c3-hsG">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fWc-c3-hsG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -486,7 +486,7 @@
             <objects>
                 <navigationController storyboardIdentifier="changePassword" automaticallyAdjustsScrollViewInsets="NO" id="NeV-gy-vLt" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Bfi-Qd-cid">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bfi-Qd-cid">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

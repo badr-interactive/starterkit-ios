@@ -22,8 +22,14 @@ class ChangePasswordController: BaseViewController {
         codeTextField.text = code
     }
     
-    @IBAction func onBack(_ sender: Any) {
+    @IBAction func submit(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func onBack(_ sender: Any) {
+        let story = UIStoryboard(name: "Main", bundle: nil)
+        let controller = story.instantiateViewController(withIdentifier: "MainController") as! SWRevealViewController
+        UIApplication.shared.keyWindow?.rootViewController = controller
     }
 
     override func didReceiveMemoryWarning() {

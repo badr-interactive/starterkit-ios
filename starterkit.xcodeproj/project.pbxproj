@@ -10,6 +10,8 @@
 		32F05368958A6DFDA20077C5 /* Pods_starterkitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00D361BB0B98CD375780927 /* Pods_starterkitTests.framework */; };
 		556D46EF21BC6DB175F9DF55 /* Pods_starterkitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534967E79823AFD4CE925854 /* Pods_starterkitUITests.framework */; };
 		710F103B744641F87393071D /* Pods_starterkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2A9E03E92A1BF3DF82199F /* Pods_starterkit.framework */; };
+		E31735761F6ED5D800B8B900 /* ProductCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31735751F6ED5D800B8B900 /* ProductCollectionCell.swift */; };
+		E390E2D61F70100600EE3EC8 /* SearchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390E2D51F70100600EE3EC8 /* SearchBarController.swift */; };
 		E3EACB031F68DA2D00F91F54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EACB021F68DA2D00F91F54 /* AppDelegate.swift */; };
 		E3EACB081F68DA2D00F91F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3EACB061F68DA2D00F91F54 /* Main.storyboard */; };
 		E3EACB0A1F68DA2D00F91F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3EACB091F68DA2D00F91F54 /* Assets.xcassets */; };
@@ -50,8 +52,7 @@
 		E3EACB8C1F68DFFB00F91F54 /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EACB881F68DFFB00F91F54 /* ChangePasswordController.swift */; };
 		E3EACB8D1F68DFFB00F91F54 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EACB891F68DFFB00F91F54 /* ForgotPasswordController.swift */; };
 		E3EACB8E1F68DFFB00F91F54 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EACB8A1F68DFFB00F91F54 /* LoginController.swift */; };
-		E3EACB911F68E03B00F91F54 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EACB901F68E03B00F91F54 /* MapViewController.swift */; };
-		E3EACB941F68E05900F91F54 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EACB931F68E05900F91F54 /* NewsViewController.swift */; };
+		E3EACB941F68E05900F91F54 /* FabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EACB931F68E05900F91F54 /* FabViewController.swift */; };
 		E3EACB961F68E12A00F91F54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3EACB951F68E12A00F91F54 /* GoogleService-Info.plist */; };
 		E3EACBA31F68E4E300F91F54 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3EACBA01F68E4E300F91F54 /* FBSDKCoreKit.framework */; };
 		E3EACBA41F68E4E300F91F54 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3EACBA11F68E4E300F91F54 /* FBSDKLoginKit.framework */; };
@@ -86,6 +87,8 @@
 		AC938F32D448EFDB256659B4 /* Pods-starterkit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-starterkit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-starterkit/Pods-starterkit.debug.xcconfig"; sourceTree = "<group>"; };
 		B67D3B76528661D805D26E88 /* Pods-starterkitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-starterkitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-starterkitTests/Pods-starterkitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C00D361BB0B98CD375780927 /* Pods_starterkitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_starterkitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E31735751F6ED5D800B8B900 /* ProductCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionCell.swift; sourceTree = "<group>"; };
+		E390E2D51F70100600EE3EC8 /* SearchBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarController.swift; sourceTree = "<group>"; };
 		E3EACAFF1F68DA2D00F91F54 /* starterkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starterkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EACB021F68DA2D00F91F54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3EACB071F68DA2D00F91F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,8 +138,7 @@
 		E3EACB881F68DFFB00F91F54 /* ChangePasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordController.swift; sourceTree = "<group>"; };
 		E3EACB891F68DFFB00F91F54 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
 		E3EACB8A1F68DFFB00F91F54 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		E3EACB901F68E03B00F91F54 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		E3EACB931F68E05900F91F54 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		E3EACB931F68E05900F91F54 /* FabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabViewController.swift; sourceTree = "<group>"; };
 		E3EACB951F68E12A00F91F54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E3EACBA01F68E4E300F91F54 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		E3EACBA11F68E4E300F91F54 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -202,6 +204,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E390E2D41F700FC700EE3EC8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E390E2D51F70100600EE3EC8 /* SearchBarController.swift */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
 		E3EACAF61F68DA2D00F91F54 = {
 			isa = PBXGroup;
 			children = (
@@ -234,7 +244,7 @@
 				E3EACB691F68DF0800F91F54 /* Helper */,
 				E3EACB861F68DFC900F91F54 /* Auth */,
 				E3EACB581F68DE1500F91F54 /* Profile */,
-				E3EACB8F1F68E01900F91F54 /* Map */,
+				E390E2D41F700FC700EE3EC8 /* Search */,
 				E3EACB921F68E04100F91F54 /* News */,
 				E3EACB3F1F68DB6D00F91F54 /* Main */,
 				E3EACB3A1F68DAF800F91F54 /* SupportingFiles */,
@@ -297,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				E3EACB461F68DD5D00F91F54 /* HomeController.swift */,
+				E31735751F6ED5D800B8B900 /* ProductCollectionCell.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -399,18 +410,10 @@
 			name = Auth;
 			sourceTree = "<group>";
 		};
-		E3EACB8F1F68E01900F91F54 /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				E3EACB901F68E03B00F91F54 /* MapViewController.swift */,
-			);
-			name = Map;
-			sourceTree = "<group>";
-		};
 		E3EACB921F68E04100F91F54 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				E3EACB931F68E05900F91F54 /* NewsViewController.swift */,
+				E3EACB931F68E05900F91F54 /* FabViewController.swift */,
 			);
 			name = News;
 			sourceTree = "<group>";
@@ -713,7 +716,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3EACB911F68E03B00F91F54 /* MapViewController.swift in Sources */,
 				E3EACB601F68DE3500F91F54 /* ProfileRealm.swift in Sources */,
 				E3EACB8D1F68DFFB00F91F54 /* ForgotPasswordController.swift in Sources */,
 				E3EACB701F68DF2600F91F54 /* Preference.swift in Sources */,
@@ -727,7 +729,7 @@
 				E3EACB6E1F68DF2600F91F54 /* Constants.swift in Sources */,
 				E3EACB531F68DDC600F91F54 /* SWRevealViewController.m in Sources */,
 				E3EACB031F68DA2D00F91F54 /* AppDelegate.swift in Sources */,
-				E3EACB941F68E05900F91F54 /* NewsViewController.swift in Sources */,
+				E3EACB941F68E05900F91F54 /* FabViewController.swift in Sources */,
 				E3EACB571F68DE0400F91F54 /* TransitionManager.swift in Sources */,
 				E3EACB831F68DFB000F91F54 /* UITableView.swift in Sources */,
 				E3EACB671F68DEDD00F91F54 /* IntroController.swift in Sources */,
@@ -736,6 +738,7 @@
 				E3EACB8E1F68DFFB00F91F54 /* LoginController.swift in Sources */,
 				E3EACB8C1F68DFFB00F91F54 /* ChangePasswordController.swift in Sources */,
 				E3EACB741F68DF6600F91F54 /* APIServices.swift in Sources */,
+				E31735761F6ED5D800B8B900 /* ProductCollectionCell.swift in Sources */,
 				E3EACBB11F69287A00F91F54 /* URL.swift in Sources */,
 				E3EACB821F68DFB000F91F54 /* UIImageView.swift in Sources */,
 				E3EACB5E1F68DE3500F91F54 /* Profile.swift in Sources */,
@@ -744,6 +747,7 @@
 				E3EACB811F68DFB000F91F54 /* UIImage.swift in Sources */,
 				E3EACB7F1F68DFB000F91F54 /* String.swift in Sources */,
 				E3EACB6F1F68DF2600F91F54 /* Enums.swift in Sources */,
+				E390E2D61F70100600EE3EC8 /* SearchBarController.swift in Sources */,
 				E3EACB5F1F68DE3500F91F54 /* ProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -60,7 +60,7 @@ class Utils{
     }
     
     class func clearData(){
-        Preference.init().setLoginState(value: false)
+        Preference.init().setBoolPref(Preference.loginState, false)
         let fbManager = FBSDKLoginManager()
         fbManager.logOut()
         let googleLogin = GIDSignIn.sharedInstance()

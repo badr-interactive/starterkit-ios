@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IntroController: UIViewController, UIScrollViewDelegate {
+class IntroController: BaseViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var textView: UILabel!
     @IBOutlet weak var pageControl: UIPageControl!

@@ -14,4 +14,5 @@ enum APIMethod:String{
     case emailLogin = "auth/login"
     case register = "auth/register"
     case forgotPassword = "auth/forgot_password"
+    case resetPassword = "auth/reset_password"
 }
