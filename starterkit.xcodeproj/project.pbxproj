@@ -17,8 +17,6 @@
 		E3EACB0A1F68DA2D00F91F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3EACB091F68DA2D00F91F54 /* Assets.xcassets */; };
 		E3EACB181F68DA2D00F91F54 /* starterkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EACB171F68DA2D00F91F54 /* starterkitTests.swift */; };
 		E3EACB231F68DA2D00F91F54 /* starterkitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EACB221F68DA2D00F91F54 /* starterkitUITests.swift */; };
-		E3EACB3D1F68DB6100F91F54 /* dev.badr.co.id.cer in Resources */ = {isa = PBXBuildFile; fileRef = E3EACB3B1F68DB6100F91F54 /* dev.badr.co.id.cer */; };
-		E3EACB3E1F68DB6100F91F54 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E3EACB3C1F68DB6100F91F54 /* Localizable.strings */; };
 		E3EACB411F68DC3300F91F54 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EACB401F68DC3300F91F54 /* MainViewController.swift */; };
 		E3EACB451F68DD3B00F91F54 /* FavoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EACB441F68DD3B00F91F54 /* FavoriteController.swift */; };
 		E3EACB471F68DD5D00F91F54 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EACB461F68DD5D00F91F54 /* HomeController.swift */; };
@@ -53,7 +51,6 @@
 		E3EACB8D1F68DFFB00F91F54 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EACB891F68DFFB00F91F54 /* ForgotPasswordController.swift */; };
 		E3EACB8E1F68DFFB00F91F54 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EACB8A1F68DFFB00F91F54 /* LoginController.swift */; };
 		E3EACB941F68E05900F91F54 /* FabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EACB931F68E05900F91F54 /* FabViewController.swift */; };
-		E3EACB961F68E12A00F91F54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3EACB951F68E12A00F91F54 /* GoogleService-Info.plist */; };
 		E3EACBA31F68E4E300F91F54 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3EACBA01F68E4E300F91F54 /* FBSDKCoreKit.framework */; };
 		E3EACBA41F68E4E300F91F54 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3EACBA11F68E4E300F91F54 /* FBSDKLoginKit.framework */; };
 		E3EACBA51F68E4E300F91F54 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3EACBA21F68E4E300F91F54 /* FBSDKShareKit.framework */; };
@@ -93,7 +90,6 @@
 		E3EACB021F68DA2D00F91F54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3EACB071F68DA2D00F91F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3EACB091F68DA2D00F91F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E3EACB0E1F68DA2D00F91F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3EACB131F68DA2D00F91F54 /* starterkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = starterkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EACB171F68DA2D00F91F54 /* starterkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starterkitTests.swift; sourceTree = "<group>"; };
 		E3EACB191F68DA2D00F91F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,8 +97,6 @@
 		E3EACB221F68DA2D00F91F54 /* starterkitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starterkitUITests.swift; sourceTree = "<group>"; };
 		E3EACB241F68DA2D00F91F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3EACB301F68DA8D00F91F54 /* starterkit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = starterkit.entitlements; sourceTree = "<group>"; };
-		E3EACB3B1F68DB6100F91F54 /* dev.badr.co.id.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = dev.badr.co.id.cer; sourceTree = "<group>"; };
-		E3EACB3C1F68DB6100F91F54 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E3EACB401F68DC3300F91F54 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E3EACB441F68DD3B00F91F54 /* FavoriteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteController.swift; sourceTree = "<group>"; };
 		E3EACB461F68DD5D00F91F54 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -139,7 +133,6 @@
 		E3EACB891F68DFFB00F91F54 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
 		E3EACB8A1F68DFFB00F91F54 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E3EACB931F68E05900F91F54 /* FabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabViewController.swift; sourceTree = "<group>"; };
-		E3EACB951F68E12A00F91F54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E3EACBA01F68E4E300F91F54 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		E3EACBA11F68E4E300F91F54 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		E3EACBA21F68E4E300F91F54 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -204,6 +197,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E358CB581F81E7B00001DD2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3EACB621F68DEA000F91F54 /* LaunchScreen.xib */,
+				E3EACB401F68DC3300F91F54 /* MainViewController.swift */,
+				E3EACB061F68DA2D00F91F54 /* Main.storyboard */,
+				E3EACB441F68DD3B00F91F54 /* FavoriteController.swift */,
+				E3EACB431F68DD0300F91F54 /* Home */,
+				E358CB591F81E81C0001DD2B /* Intro */,
+				E3EACB861F68DFC900F91F54 /* Auth */,
+				E3EACB581F68DE1500F91F54 /* Profile */,
+				E390E2D41F700FC700EE3EC8 /* Search */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E358CB591F81E81C0001DD2B /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				E3EACB651F68DEDD00F91F54 /* IntroController.swift */,
+				E3EACB661F68DEDD00F91F54 /* Introduction.storyboard */,
+			);
+			name = Intro;
+			sourceTree = "<group>";
+		};
+		E358CB5A1F81E8C40001DD2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3EACB5A1F68DE3500F91F54 /* Profile.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E358CB5B1F81E8E30001DD2B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3EACB5C1F68DE3500F91F54 /* ProfileRealm.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		E390E2D41F700FC700EE3EC8 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,17 +271,13 @@
 		E3EACB011F68DA2D00F91F54 /* starterkit */ = {
 			isa = PBXGroup;
 			children = (
+				E358CB5B1F81E8E30001DD2B /* Controller */,
+				E358CB5A1F81E8C40001DD2B /* Model */,
+				E358CB581F81E7B00001DD2B /* View */,
 				E3EACB751F68DF7B00F91F54 /* Extension */,
 				E3EACB481F68DD7200F91F54 /* Widget */,
-				E3EACB611F68DE6300F91F54 /* Launch */,
-				E3EACB641F68DEBB00F91F54 /* Introduction */,
+				E3EACB721F68DF2E00F91F54 /* NetworkService */,
 				E3EACB691F68DF0800F91F54 /* Helper */,
-				E3EACB861F68DFC900F91F54 /* Auth */,
-				E3EACB581F68DE1500F91F54 /* Profile */,
-				E390E2D41F700FC700EE3EC8 /* Search */,
-				E3EACB921F68E04100F91F54 /* News */,
-				E3EACB3F1F68DB6D00F91F54 /* Main */,
-				E3EACB3A1F68DAF800F91F54 /* SupportingFiles */,
 				E3EACB301F68DA8D00F91F54 /* starterkit.entitlements */,
 				E3EACB021F68DA2D00F91F54 /* AppDelegate.swift */,
 				E3EACB091F68DA2D00F91F54 /* Assets.xcassets */,
@@ -273,36 +303,6 @@
 			path = starterkitUITests;
 			sourceTree = "<group>";
 		};
-		E3EACB3A1F68DAF800F91F54 /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				E3EACB951F68E12A00F91F54 /* GoogleService-Info.plist */,
-				E3EACB0E1F68DA2D00F91F54 /* Info.plist */,
-				E3EACB3B1F68DB6100F91F54 /* dev.badr.co.id.cer */,
-				E3EACB3C1F68DB6100F91F54 /* Localizable.strings */,
-			);
-			name = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		E3EACB3F1F68DB6D00F91F54 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				E3EACB421F68DCFA00F91F54 /* Favorite */,
-				E3EACB431F68DD0300F91F54 /* Home */,
-				E3EACB401F68DC3300F91F54 /* MainViewController.swift */,
-				E3EACB061F68DA2D00F91F54 /* Main.storyboard */,
-			);
-			name = Main;
-			sourceTree = "<group>";
-		};
-		E3EACB421F68DCFA00F91F54 /* Favorite */ = {
-			isa = PBXGroup;
-			children = (
-				E3EACB441F68DD3B00F91F54 /* FavoriteController.swift */,
-			);
-			name = Favorite;
-			sourceTree = "<group>";
-		};
 		E3EACB431F68DD0300F91F54 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,9 +315,10 @@
 		E3EACB481F68DD7200F91F54 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				E3EACB491F68DD7B00F91F54 /* NavigationDrawer */,
+				E3EACB921F68E04100F91F54 /* FloatingButton */,
 				E3EACB541F68DE0400F91F54 /* ProgressDialogStyle.swift */,
 				E3EACB551F68DE0400F91F54 /* TransitionManager.swift */,
-				E3EACB491F68DD7B00F91F54 /* NavigationDrawer */,
 			);
 			name = Widget;
 			sourceTree = "<group>";
@@ -339,34 +340,14 @@
 			isa = PBXGroup;
 			children = (
 				E3EACB591F68DE3500F91F54 /* Profile.storyboard */,
-				E3EACB5A1F68DE3500F91F54 /* Profile.swift */,
 				E3EACB5B1F68DE3500F91F54 /* ProfileController.swift */,
-				E3EACB5C1F68DE3500F91F54 /* ProfileRealm.swift */,
 			);
 			name = Profile;
-			sourceTree = "<group>";
-		};
-		E3EACB611F68DE6300F91F54 /* Launch */ = {
-			isa = PBXGroup;
-			children = (
-				E3EACB621F68DEA000F91F54 /* LaunchScreen.xib */,
-			);
-			name = Launch;
-			sourceTree = "<group>";
-		};
-		E3EACB641F68DEBB00F91F54 /* Introduction */ = {
-			isa = PBXGroup;
-			children = (
-				E3EACB651F68DEDD00F91F54 /* IntroController.swift */,
-				E3EACB661F68DEDD00F91F54 /* Introduction.storyboard */,
-			);
-			name = Introduction;
 			sourceTree = "<group>";
 		};
 		E3EACB691F68DF0800F91F54 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				E3EACB721F68DF2E00F91F54 /* NetworkService */,
 				E3EACB6A1F68DF2600F91F54 /* Constants.swift */,
 				E3EACB6B1F68DF2600F91F54 /* Enums.swift */,
 				E3EACB6C1F68DF2600F91F54 /* Preference.swift */,
@@ -410,12 +391,12 @@
 			name = Auth;
 			sourceTree = "<group>";
 		};
-		E3EACB921F68E04100F91F54 /* News */ = {
+		E3EACB921F68E04100F91F54 /* FloatingButton */ = {
 			isa = PBXGroup;
 			children = (
 				E3EACB931F68E05900F91F54 /* FabViewController.swift */,
 			);
-			name = News;
+			name = FloatingButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -544,14 +525,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3EACBAF1F68EF8900F91F54 /* starterkit.entitlements in Resources */,
-				E3EACB3E1F68DB6100F91F54 /* Localizable.strings in Resources */,
 				E3EACB681F68DEDD00F91F54 /* Introduction.storyboard in Resources */,
 				E3EACB0A1F68DA2D00F91F54 /* Assets.xcassets in Resources */,
 				E3EACB081F68DA2D00F91F54 /* Main.storyboard in Resources */,
 				E3EACB631F68DEA000F91F54 /* LaunchScreen.xib in Resources */,
-				E3EACB3D1F68DB6100F91F54 /* dev.badr.co.id.cer in Resources */,
 				E3EACB8B1F68DFFB00F91F54 /* Authenticate.storyboard in Resources */,
-				E3EACB961F68E12A00F91F54 /* GoogleService-Info.plist in Resources */,
 				E3EACB5D1F68DE3500F91F54 /* Profile.storyboard in Resources */,
 				E3EACB511F68DDC600F91F54 /* ImageHeaderView.xib in Resources */,
 			);

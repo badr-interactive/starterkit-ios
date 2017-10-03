@@ -28,6 +28,12 @@ class BaseViewController: UIViewController, URLSessionDelegate, URLSessionTaskDe
 
 extension BaseViewController{
     
+    /*
+     Funsi initialisasi left dan right bar button item untuk membuat menu sisi(kanan dan kiri)
+     Parameter :
+     @param leftMenu => View UIBarButtonItem
+     @param rightMenu = View UIBarButtonItem
+     */
     func initSideMenu(_ leftMenu: UIBarButtonItem, _ rightMenu: UIBarButtonItem) {
 //        self.revealViewController().rightViewRevealWidth = width
         leftMenu.target = self.revealViewController()
@@ -39,6 +45,11 @@ extension BaseViewController{
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
+    /*
+     Funsi initialisasi left dan right bar button item untuk membuat menu sisi kiri
+     Parameter :
+     @param leftMenu => View UIBarButtonItem
+     */
     func initSideMenu(leftMenu: UIBarButtonItem) {
 //        self.revealViewController().rightViewRevealWidth = width
         leftMenu.target = self.revealViewController()
@@ -47,6 +58,11 @@ extension BaseViewController{
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
+    /*
+     Funsi initialisasi left dan right bar button item untuk membuat menu sisi kanan
+     Parameter :
+     @param rightMenu = View UIBarButtonItem
+     */
     func initSideMenu(rightMenu: UIBarButtonItem) {
 //        self.revealViewController().rightViewRevealWidth = width
         rightMenu.target = self.revealViewController()
@@ -55,6 +71,9 @@ extension BaseViewController{
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
+    /*
+     Funsi Untuk menampilkan progress dialog dan activity indicator di statusbar secara global
+     */
     func showProgress(){
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         self.progressBar = GradientCircularProgress()
@@ -66,15 +85,21 @@ extension BaseViewController{
         }
     }
     
-    func showToast(_ message:String){
-        Toast(text: message).show()
-    }
-    
+    /*
+     Funsi Untuk mematikan dan menampilkan progress dialog dan activity indicator di statusbar secara global
+     */
     func closeProgressDialog(){
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
         if self.progressView != nil {
             self.progressBar.dismiss(progress: progressView)
         }
+    }
+    
+    /*
+     Funsi Untuk menampilkan Toast(text dialog)
+     */
+    func showToast(_ message:String){
+        Toast(text: message).show()
     }
     
     func configureURLSession() {
