@@ -8,6 +8,9 @@
 
 import Foundation
 
+/*
+ Enum dari list method yang diperlukan untuk akses server
+ */
 enum APIMethod:String{
     //post
     case socialLogin = "auth/social_login"

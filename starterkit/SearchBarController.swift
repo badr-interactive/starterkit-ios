@@ -43,6 +43,9 @@ class SearchBarController: BaseViewController, UITableViewDelegate, UITableViewD
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
+    /*
+     Update layout dengan hasil pencarian dari component searchbar
+     */
     func updateSearchResults(for searchController: UISearchController) {
         // If we haven't typed anything into the search bar then do not filter the results
         if searchController.searchBar.text! == "" {

@@ -17,10 +17,19 @@ extension String{
         return self.substring(from: self.characters.index(self.startIndex, offsetBy: from))
     }
     
+    /*
+     Fungsi untuk menghitung jumlah karakter pada string
+     */
     var length: Int {
         return self.characters.count
     }
     
+    /*
+     Fungsi untuk pengecekan apakah value string nil atau string empty
+     Kondisi :
+     - Jika string nil atau empty, akan mengembalikan nilai true
+     - Jika string tidak nil atau empty, akan mengembalikan nilai false
+     */
     func isNilOrEmpty()->Bool{
         if self == ""{
             return true

@@ -9,6 +9,9 @@
 import Foundation
 
 extension UIDevice{
+    /*
+     Fungsi untuk mendapatkan informasi model device yang dipakai
+     */
     var modelName: String {
         var systemInfo = utsname()
         uname(&systemInfo)

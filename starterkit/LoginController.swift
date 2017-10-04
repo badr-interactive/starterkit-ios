@@ -43,6 +43,9 @@ class LoginController: BaseViewController, UITextFieldDelegate, GIDSignInUIDeleg
         GIDSignIn.sharedInstance().uiDelegate = self
     }
     
+    /*
+     Initialisai tampilan(layout) sesuai dengan design yang dibutuhkan
+     */
     func setLayout(){
         emailField.delegate = self
         passwordField.delegate = self
@@ -78,6 +81,7 @@ class LoginController: BaseViewController, UITextFieldDelegate, GIDSignInUIDeleg
         }
     }
     
+    
     @IBAction func facebookLogin(_ sender: UIButton) {
         if Utils.isInternetAvailable(){
             self.showProgress()
@@ -104,6 +108,9 @@ class LoginController: BaseViewController, UITextFieldDelegate, GIDSignInUIDeleg
         }
     }
     
+    /*
+     Mendapatkan data user hasil dari login facebook
+     */
     func getFBUserData(){
         self.closeProgressDialog()
         if((FBSDKAccessToken.current()) != nil){
@@ -142,6 +149,9 @@ class LoginController: BaseViewController, UITextFieldDelegate, GIDSignInUIDeleg
         viewController.dismiss(animated: true, completion: nil)
     }
     
+    /*
+     Mendapatkan data user hasil dari login google
+     */
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
         // ...
         if let error = error {
@@ -182,6 +192,9 @@ class LoginController: BaseViewController, UITextFieldDelegate, GIDSignInUIDeleg
         // ...
     }
     
+    /*
+     Menyembunyikan beberapa component register pada layout
+     */
     func hideRegisterField(){
         registerFieldHeight.constant = 0
         confirmPasswordField.isHidden = true
@@ -190,6 +203,9 @@ class LoginController: BaseViewController, UITextFieldDelegate, GIDSignInUIDeleg
         signButton.setTitle(NSLocalizedString("signin", comment: "Authenticate"), for: .normal)
     }
     
+    /*
+     Menampilkan beberapa component yang dibutuhkan untuk register pada layout
+     */
     func showRegisterField(){
         registerFieldHeight.constant = 40
         confirmPasswordField.isHidden = false
@@ -231,6 +247,9 @@ class LoginController: BaseViewController, UITextFieldDelegate, GIDSignInUIDeleg
         }
     }
     
+    /*
+     Fungsi untuk memvalidasi input form
+     */
     func formValidation()->String{
         var error = ""
         if (emailField.text?.isEmpty)!{
@@ -270,6 +289,9 @@ class LoginController: BaseViewController, UITextFieldDelegate, GIDSignInUIDeleg
         return error
     }
     
+    /*
+     Fungsi untuk mengecek format email
+     */
     func isValidEmail(_ emailStr:String) -> Bool {
         // print("validate calendar: \(testStr)")
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"

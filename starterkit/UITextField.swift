@@ -10,6 +10,9 @@ import Foundation
 import UIKit
 
 extension UITextField{
+    /*
+     Fungsi untuk membuat image placeholder pada textfield
+     */
     func setImagePlaceHolder(image: String){
         self.leftViewMode = UITextFieldViewMode.always
         let leftView = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: 20))

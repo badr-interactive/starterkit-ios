@@ -19,17 +19,18 @@ class BaseViewController: UIViewController, URLSessionDelegate, URLSessionTaskDe
     var serverTrustPolicy: ServerTrustPolicy!
     var serverTrustPolicies: [String: ServerTrustPolicy]!
     var afManager: SessionManager!
+    let CERTIFICATE_NAME = "dev.badr.co.id"
     
     override var prefersStatusBarHidden: Bool{
 //        if Preference.init().getBoolPref(Preference.loginState)!{ return true }
-        return true
+        return false
     }
 }
 
 extension BaseViewController{
     
     /*
-     Funsi initialisasi left dan right bar button item untuk membuat menu sisi(kanan dan kiri)
+     Fungsi initialisasi left dan right bar button item untuk membuat menu sisi(kanan dan kiri)
      Parameter :
      @param leftMenu => View UIBarButtonItem
      @param rightMenu = View UIBarButtonItem
@@ -46,7 +47,7 @@ extension BaseViewController{
     }
     
     /*
-     Funsi initialisasi left dan right bar button item untuk membuat menu sisi kiri
+     Fungsi initialisasi left dan right bar button item untuk membuat menu sisi kiri
      Parameter :
      @param leftMenu => View UIBarButtonItem
      */
@@ -59,7 +60,7 @@ extension BaseViewController{
     }
     
     /*
-     Funsi initialisasi left dan right bar button item untuk membuat menu sisi kanan
+     Fungsi initialisasi left dan right bar button item untuk membuat menu sisi kanan
      Parameter :
      @param rightMenu = View UIBarButtonItem
      */
@@ -72,12 +73,13 @@ extension BaseViewController{
     }
     
     /*
-     Funsi Untuk menampilkan progress dialog dan activity indicator di statusbar secara global
+     Fungsi Untuk menampilkan progress dialog dan activity indicator di statusbar secara global.
+     Progress dialog menggunakan library GradientCircularProgress
      */
     func showProgress(){
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         self.progressBar = GradientCircularProgress()
-        self.progressView = progressBar.show(frame: Utils.getRectProgressDialog(controller: self), message: NSLocalizedString("please_wait", comment: "Dialog"), style: ProgressDialogStyle())
+        self.progressView = progressBar.show(frame: Utils.getRectProgressDialog(self), message: NSLocalizedString("please_wait", comment: "Dialog"), style: ProgressDialogStyle())
         progressView?.layer.cornerRadius = 10.0
         progressView?.tag = 99
         if progressView != nil {
@@ -86,7 +88,7 @@ extension BaseViewController{
     }
     
     /*
-     Funsi Untuk mematikan dan menampilkan progress dialog dan activity indicator di statusbar secara global
+     Fungsi Untuk mematikan dan menampilkan progress dialog dan activity indicator di statusbar secara global
      */
     func closeProgressDialog(){
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
@@ -96,7 +98,7 @@ extension BaseViewController{
     }
     
     /*
-     Funsi Untuk menampilkan Toast(text dialog)
+     Fungsi Untuk menampilkan Toast(text dialog)
      */
     func showToast(_ message:String){
         Toast(text: message).show()
@@ -106,6 +108,9 @@ extension BaseViewController{
         self.urlSession = URLSession(configuration: URLSessionConfiguration.default, delegate: self, delegateQueue: nil)
     }
     
+    /*
+     Fungsi Untuk konfigirasi Alamofire dengan pinning self signing certificate
+     */
     func configureAlamoFire() {
         self.serverTrustPolicy = ServerTrustPolicy.pinCertificates(
             // Getting the certificate from the certificate data
@@ -117,7 +122,7 @@ extension BaseViewController{
         )
         
         self.serverTrustPolicies = [
-            "dev.badr.co.id": self.serverTrustPolicy!
+            CERTIFICATE_NAME : self.serverTrustPolicy!
         ]
         
         self.afManager = SessionManager(
@@ -142,7 +147,7 @@ extension BaseViewController{
         
         // Get local and remote cert data
         let remoteCertificateData:NSData = SecCertificateCopyData(certificate!)
-        let pathToCert = Bundle.main.path(forResource: "dev.badr.co.id", ofType: "cer")
+        let pathToCert = Bundle.main.path(forResource: CERTIFICATE_NAME, ofType: "cer")
         let localCertificate:NSData = NSData(contentsOfFile: pathToCert!)!
         
         if (remoteCertificateData.isEqual(to: localCertificate as Data)) {
@@ -153,6 +158,12 @@ extension BaseViewController{
         }
     }
     
+    /*
+     Fungsi untuk memanggil api dengan metode POST
+     Param :
+     @param method =  method yang dipanggil(berupa object enum)
+     @param param = Parameter yang dibutuhkan di request bodynya
+     */
     func callPOSTService(_ method:APIMethod, _ param:Any){
         configureAlamoFire()
         if Utils.isInternetAvailable(){

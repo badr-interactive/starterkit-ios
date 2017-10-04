@@ -19,6 +19,9 @@ extension UIView{
         return loadNib(self)
     }
     
+    /*
+     Fungsi untuk membuat shadow pada view(seperti tampilan cardview pada android)
+     */
     func dropShadow(scale: Bool = true) {
         
         self.layer.masksToBounds = false
@@ -32,6 +35,12 @@ extension UIView{
         self.layer.rasterizationScale = scale ? UIScreen.main.scale : 1
     }
     
+    /*
+     Fungsi untuk membuat corner dari view berbentuk rounded
+     Parameter :
+     @param rectCorner = object untuk menentuka sisi mana saja yang akan diround. contoh [.topLeft, .bottomRight]
+     @param size = ukuran lengkung yang diinginkan. contoh : 1,2,..
+     */
     func setRounded(_ rectCorner:UIRectCorner, _ size: CGFloat){
         let rectShape = CAShapeLayer()
         rectShape.bounds = self.frame

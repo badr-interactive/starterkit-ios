@@ -28,6 +28,9 @@ class ProfileController: BaseViewController {
         // Do any additional setup after loading the view.
     }
     
+    /*
+     Menampilkan data user pada layout profile
+     */
     func bind(){
         self.profile = ProfileRealm.getData()
         if self.profile != nil{

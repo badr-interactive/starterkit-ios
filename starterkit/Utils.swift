@@ -14,6 +14,12 @@ import FBSDKLoginKit
 import Alamofire
 
 class Utils{
+    /*
+     Fungsi Untuk meng-handle serialize response error
+     Paramater :
+     @param data = berupa object Data response error dari balikan API
+     @param view = Controller di mana message error akan ditampilkan
+     */
     class func serializeError(_ data: Data, _ view: BaseViewController){
         let dataStr = String(data: data, encoding: String.Encoding.utf8)
         if (dataStr?.isEmpty)!{
@@ -30,6 +36,9 @@ class Utils{
         }
     }
     
+    /*
+     Fungsi Untuk mengecek apakah device terkoneksi dengan internet atau tidak
+     */
     class func isInternetAvailable() -> Bool{
         var zeroAddress = sockaddr_in()
         zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))
@@ -50,7 +59,11 @@ class Utils{
         return (isReachable && !needsConnection)
     }
     
-    class func getRectProgressDialog(controller: UIViewController) -> CGRect {
+    /*
+     Fungsi Untuk mengatur ukuran dialog Progress
+     @param controller = Controller di mana progress dialog akan tampil
+     */
+    class func getRectProgressDialog(_ controller: UIViewController) -> CGRect {
         let size = controller.view.frame.size.width/3
         return CGRect(
             x: ((controller.view.frame.size.width)/2)-(size/2),
@@ -59,6 +72,9 @@ class Utils{
             height: size)
     }
     
+    /*
+     Fungsi Untuk menghapus semua data yang berhubungan dengan user logged. Fungsi ini dipanggil ketika Sign out.
+     */
     class func clearData(){
         Preference.init().setBoolPref(Preference.loginState, false)
         let fbManager = FBSDKLoginManager()
@@ -69,6 +85,9 @@ class Utils{
         clearCookie()
     }
     
+    /*
+     Fungsi Untuk menghapus semua data cookie(user dan password) pada browser bawaan ios
+     */
     class func clearCookie(){
         let cookieJar = HTTPCookieStorage.shared
         
@@ -77,6 +96,9 @@ class Utils{
         }
     }
     
+    /*
+     Fungsi Untuk generate file certificate (dev.badr.co.id.cer) kedalam bentuk object 'SecCertificate'
+     */
     class func getCert()->SecCertificate{
         let rootCertPath:String = Bundle.main.path(forResource: "dev.badr.co.id", ofType: "cer")!
         let rootCertData = NSData(contentsOfFile: rootCertPath)!
