@@ -1,4 +1,4 @@
-![Starterit-IOS (Swift)](https://avatars0.githubusercontent.com/u/29533430?v=4&s=200)
+![Badr-Interactive](https://avatars0.githubusercontent.com/u/29533430?v=4&s=50) Starterit-IOS (Swift)
 
 Starterkit ini adalah template project dengan beberapa common component yang dapat langsung digunakan ketika inisialisasi project baru. Di repository ini berisi sourcecode dengan bahasa pemrograman swift.
 
